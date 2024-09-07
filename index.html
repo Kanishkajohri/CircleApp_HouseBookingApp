@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircleApp - Rent Apartments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>CircleApp</h1>
+        <p>Houses & Apartments with Zero Security Deposit</p>
+    </header>
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="Receipt.html">Receipt</a></li>
+            
+        </ul>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Gurgaon" />
+        <div class="results">
+
+    <!-- Property List Section -->
+    <section class="property-list">
+        <h2>Available Properties in Gurgaon</h2>
+        <div class="property-card">
+            <img src="https://i1.wp.com/magzhouse.com/wp-content/uploads/2020/01/Awesome-Studio-Apartment-Ideas-For-Your-Inspiration-09.jpg?ssl=1" alt="Sky Dandelions Apartment">
+            <div class="property-info">
+                <h3>Sky Dandelions Apartment</h3>
+                <p>Sector 28, Gurgaon</p>
+                <p>₹22,000/month</p>
+                <button onclick="selectProperty('Sky Dandelions Apartment', 22000)">Select Property</button>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.hNaN98cSZ2BdVDTyLuGTpQHaEV&pid=Api&P=0&h=180" alt="Wings Tower">
+            <div class="property-info">
+                <h3>Wings Tower</h3>
+                <p>Sector 27, Gurgaon</p>
+                <p>₹17,000/month</p>
+                <button onclick="selectProperty('Wings Tower', 17000)">Select Property</button>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.xka6K5u1nLhqlrHUJyXgVgHaE8&pid=Api&P=0&h=180" alt="Wayside Modern House">
+            <div class="property-info">
+                <h3>Wayside Modern House</h3>
+                <p>MG Road, Gurgaon</p>
+                <p>₹18,000/month</p>
+                <button onclick="selectProperty('Wayside Modern House', 18000)">Select Property</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rent Details Section -->
+    <section class="rent-details">
+        <h2>Transaction Review</h2>
+        <p id="selected-property">No property selected.</p>
+        <label for="tenure">Select Period:</label>
+        <select id="tenure">
+            <option value="3">3 months</option>
+            <option value="6" selected>6 months</option>
+            <option value="9">9 months</option>
+        </select>
+        <p id="monthly-rent">Monthly Rent: ₹0</p>
+        <p id="total-amount">Total Amount: ₹0</p>
+        <a href="Conf.html" class="btn">Pay with Circle</a>
+    </section>
+
+    <script src="App.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

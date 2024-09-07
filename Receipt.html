@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircleApp - Payment Receipt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CircleApp</h1>
+        <p>Houses & Apartments with Zero Security Deposit</p>
+    </header>
+    <!-- Receipt Message -->
+    <section class="receipt">
+        <h1>Payment Receipt</h1>
+        <p>Property: Sky Dandelions Apartment<span id="property-name"></span></p>
+        <p>Tenure: ₹22,000<span id="tenure-period"></span> months</p>
+        <p>Total Amount: ₹1,32,000₹<span id="total-amount"></span></p>
+        <p>Transaction ID: TI45V43y98235 <span id="transaction-id"></span></p>
+        <button onclick="window.print()">Print Receipt</button>
+    </section>
+
+    <script src="App.js"></script>
+</body>
+</html>
